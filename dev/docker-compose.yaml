@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  hash-bundle-php:
+    image: 'bitnami/php-fpm:8.1'
+    volumes:
+      - ../.:/app
+      - ./php-custom.ini:/opt/bitnami/php/etc/conf.d/custom.ini

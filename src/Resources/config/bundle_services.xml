@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="Dynamophp\HashBundle\Service\DynamoHasherSha256" class="Dynamophp\HashBundle\Service\DynamoHasherSha256" public="true">
+            <argument type="service" id="Dynamophp\Hash\Hasher" />
+        </service>
+
+        <service id="Dynamophp\HashBundle\Service\DynamoHasherInterface" alias="Dynamophp\HashBundle\Service\DynamoHasherSha256" public="true" />
+
+        <service id="Dynamophp\Hash\Hasher" class="Dynamophp\Hash\Hasher" public="false">
+            <argument type="service" id="hasher_sha256_default_context" />
+        </service>
+
+        <service id="hasher_sha256_default_context"  class="Dynamophp\Hash\Context" public="false">
+            <factory class="Dynamophp\HashBundle\Factory\DefaultContextFactory" method="createSha256Context"/>
+        </service>
+    </services>
+</container>
