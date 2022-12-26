@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3b87fab6b8dc9c393739480a19ad86d",
+    "content-hash": "89f18108382df183c147cc60f43be676",
     "packages": [
         {
             "name": "dynamophp/hash",
