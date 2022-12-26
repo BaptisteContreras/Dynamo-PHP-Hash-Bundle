@@ -2,10 +2,7 @@
 
 namespace Dynamophp\HashBundle\DependencyInjection;
 
-use Dynamophp\Hash\Context;
-use Dynamophp\Hash\Hasher;
 use Dynamophp\HashBundle\Exception\BadHasherSelectionException;
-use Dynamophp\HashBundle\Service\DynamoHasherSha256;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
@@ -27,7 +24,7 @@ class DynamoPhpHashExtension extends Extension
     {
         $loader = new XmlFileLoader(
             $container,
-            new FileLocator(__DIR__ . '/../Resources/config')
+            new FileLocator(__DIR__.'/../Resources/config')
         );
 
         $loader->load('bundle_services.xml');

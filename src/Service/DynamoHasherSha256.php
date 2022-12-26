@@ -8,8 +8,8 @@ use Dynamophp\Hash\InvalidSelectionSizeException;
 
 class DynamoHasherSha256 implements DynamoHasherInterface
 {
-    public function __construct(private readonly Hasher $hasher) {
-
+    public function __construct(private readonly Hasher $hasher)
+    {
     }
 
     /**
