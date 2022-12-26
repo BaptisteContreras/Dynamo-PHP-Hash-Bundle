@@ -1,0 +1,26 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Dynamophp\\\\HashBundle\\\\DependencyInjection\\\\Configuration\\:\\:getEndSelection\\(\\) has parameter \\$configuration with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/DependencyInjection/Configuration.php
+
+		-
+			message: "#^Method Dynamophp\\\\HashBundle\\\\DependencyInjection\\\\Configuration\\:\\:getStartSelection\\(\\) has parameter \\$configuration with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/DependencyInjection/Configuration.php
+
+		-
+			message: "#^Method Dynamophp\\\\HashBundle\\\\DependencyInjection\\\\DynamoPhpHashExtension\\:\\:configureSha256Hasher\\(\\) has parameter \\$configuration with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/DependencyInjection/DynamoPhpHashExtension.php
+
+		-
+			message: "#^Method Dynamophp\\\\HashBundle\\\\DependencyInjection\\\\DynamoPhpHashExtension\\:\\:load\\(\\) has no return type specified\\.$#"
+			count: 1
+			path: src/DependencyInjection/DynamoPhpHashExtension.php
+
+		-
+			message: "#^Parameter \\#1 \\$configuration of method Symfony\\\\Component\\\\DependencyInjection\\\\Extension\\\\Extension\\:\\:processConfiguration\\(\\) expects Symfony\\\\Component\\\\Config\\\\Definition\\\\ConfigurationInterface, Symfony\\\\Component\\\\Config\\\\Definition\\\\ConfigurationInterface\\|null given\\.$#"
+			count: 1
+			path: src/DependencyInjection/DynamoPhpHashExtension.php
